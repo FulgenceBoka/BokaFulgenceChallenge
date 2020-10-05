@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail product</title>
+    <link rel="stylesheet" href="fontawesome/all.min.css" />
+    <link rel="stylesheet" href="fontawesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="block-principal">
+      <header class="header">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#"> BokaShop </a>
+          </div>
+          <input
+            type="search"
+            id="for"
+            name="search"
+            placeholder="recherche personnalisé ici ✍✍✍"
+          />
+          <div class="div">
+            <div style="display: inline-block">
+              <a href="#">mon compte</a> | <a href="#">Commandes</a> |
+              <a href="#">Deconnexion</a>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <a href="#">Accueil</a>
+          <a href="">Homme</a>
+          <a href="">Femme</a>
+          <a href="">Enfants</a>
+          <a href="#">Conseils</a>
+          <a href="#">Contact</a>
+          <a class="panier"
+            ><img src="images/cart.png" alt="panier" title="panier" /><sup
+              >1</sup
+            ></a
+          >
+        </nav>
+      </header>
+
+      <!-- DETAIL PRODUIT -->
+
+      <div class="grand-container">
+        <section class="section-container">
+          <div class="detail-produit">
+            <div class="head">
+              <a target="_blank" href="#" class="img-link"
+                ><img
+                  id="detail-img"
+                  src="images/product-1.jpg"
+                  alt="product-1"
+              /></a>
+            </div>
+            <div class="body">
+              <h2 id="productName">Polo choc</h2>
+              Avis
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-alt"></i>
+              <p>Stock : disponible</p>
+              <p>Prix unitaire : <span id="unitPrice">12.5</span>£</p>
+              <p>Prix spécial : <span id="reductionPrice">9.25</span>£</p>
+
+              <input type="number" name="qantite" value="1" /><input
+                type="button"
+                value="ajout panier"
+                class="btn"
+              />
+            </div>
+          </div>
+
+          <!-- Information sur la livraison -->
+          <div class="info">
+            <h4>Information sur livraison</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              cupiditate cum dolor assumenda? Fugit quod ut veniam dignissimos
+              doloribus consequatur.
+            </p>
+          </div>
+
+          <div class="compare-produit">
+            <div class="card">
+              <h3 class="h3">Comparaison</h3>
+              <p>Iphone 6 <br />Iphone 6 plus</p>
+              <a href="#" class="btn">Compare</a>
+            </div>
+            <div class="card">
+              <h3 class="h3">Lorem, ipsum dolor 2.</h3>
+              <p>
+                <label for="lorem">
+                  <input type="checkbox" id="lorem" />
+                  Lorem
+                </label>
+                <br />
+                <label for="ipsum">
+                  <input type="checkbox" id="ipsum" />
+                  ipsum
+                </label>
+                <br />
+                <label for="consectetur">
+                  <input type="checkbox" id="consectetur" />
+                  consectetur
+                </label>
+                <br />
+                <label for="adipisicing">
+                  <input type="checkbox" id="adipisicing" />
+                  adipisicing
+                </label>
+              </p>
+              <a href="#" class="btn">Lorem, ipsum.</a>
+            </div>
+            <div class="card">
+              <h3 class="h3">Lorem, titre 4.</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <a href="#" class="btn">Lorem, ipsum.</a>
+            </div>
+          </div>
+
+          <div class="info">
+            <h4>Information complémentaire</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              cupiditate cum dolor assumenda? Fugit quod ut veniam dignissimos
+              doloribus consequatur. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Minima, ipsum.
+            </p>
+          </div>
+        </section>
+        <aside class="aside">
+          <h4>Choice your favorite color</h4>
+          <div class="row-color">
+            <div
+              class="col-3"
+              style="background-color: rgb(255, 0, 0); height: 2rem"
+            ></div>
+            <div
+              class="col-3"
+              style="background-color: rgb(0, 255, 0); height: 2rem"
+            ></div>
+            <div
+              class="col-3"
+              style="background-color: rgb(0, 0, 255); height: 2rem"
+            ></div>
+          </div>
+
+          <p>you may also be interested in</p>
+          <div class="produits-interessant">
+            <div class="card">
+              <div class="head">
+                <img src="images/product-9.jpg" />
+              </div>
+              <div class="body">
+                <h3>Montre</h3>
+                <div class="content">
+                  <span>15.90</span>£ |
+                  <small>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </small>
+                  <a href="detail-produit.html" class="btn add-cart"
+                    >Ajout panier</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="head">
+                <img src="images/product-11.jpg" />
+              </div>
+              <div class="body">
+                <h3>Chaussure blanche</h3>
+                <div class="content">
+                  <span>12</span>£ |
+                  <small>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </small>
+                  <a href="detail-produit.html" class="btn add-cart"
+                    >Ajout panier</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <img src="images/product-12.jpg" />
+              </div>
+              <div class="body">
+                <h3>Jean noir</h3>
+                <div class="content">
+                  <span>18.50</span>£ |
+                  <small>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </small>
+                  <a href="detail-produit.html" class="btn add-cart"
+                    >Ajout panier</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <img src="images/product-7.jpg" />
+              </div>
+              <div class="body">
+                <h3>Chaussette HRX</h3>
+                <div class="content">
+                  <span>35</span>£ |
+                  <small>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                  </small>
+                  <a href="detail-produit.html" class="btn add-cart"
+                    >Ajout panier</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <video width="400" controls>
+                <source
+                  src="https://youtu.be/oenAK_gR7k0?t=9"
+                  type="video/mp4"
+                />
+                Your browser does not support HTML video.
+              </video>
+
+              <p>
+                Lien youtube
+                <a href="https://youtu.be/oenAK_gR7k0?t=9" target="_blank"
+                  >Click 👈👈</a
+                >.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="reseaux-sociaux">
+        <h4>Reseaux sociaux</h4>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitch"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <hr />
+      <p class="copyright">Crée par <span>BokaShop</span>. Open source</p>
+    </footer>
+    <script src="js/detail-produit.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

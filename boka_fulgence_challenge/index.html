@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <link rel="stylesheet" href="fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="fontawesome/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="block-principal">
+      <header class="header">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#"> BokaShop </a>
+          </div>
+            <input type="search" id="for" name="search" placeholder="recherche personnalisé ici ✍✍✍" />
+          <div class="div">
+            <div style="display: inline-block">
+              <a href="#">mon compte</a> | <a href="#">Commandes</a> |
+              <a href="#">Deconnexion</a>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <a href="#">Accueil</a>
+          <a href="">Homme</a>
+          <a href="">Femme</a>
+          <a href="">Enfants</a>
+          <a href="#">Conseils</a>
+          <a href="#">Contact</a>
+          <a class="panier"
+            ><img src="images/cart.png" alt="panier" title="panier" /><sup
+              >1</sup
+            ></a
+          >
+        </nav>
+      </header>
+
+      <!-- DEBUT DE LA GRANDE SECTION -->
+
+      <div class="container">
+        <aside class="aside-gauche">
+          <div class="card">
+            <span class="offre">70.80 £</span>
+            <img src="images/buy-2.jpg" alt="chaussure" />
+            <span id="promo">promo -50%</span>
+          </div>
+
+          <h2>Favorite color</h2>
+          <div class="row-color">
+            <div
+              class="col-3"
+              style="background-color: rgb(255, 0, 0); height: 2rem"
+            ></div>
+            <div
+              class="col-3"
+              style="background-color: rgb(0, 255, 0); height: 2rem"
+            ></div>
+            <div
+              class="col-3"
+              style="background-color: rgb(0, 0, 255); height: 2rem"
+            ></div>
+          </div>
+        </aside>
+        <section class="section-container">
+          <div class="slider">
+            <a target="_blank" href="#" class="img-link"
+              ><img id="img-slider" src="images/product-1.jpg" alt="product-1"
+            /></a>
+
+            <i class="fa fa-chevron-left" onclick="slider(-1);"></i>
+
+            <i class="fa fa-chevron-right" onclick="slider(1);"></i>
+          </div>
+
+          <!-- Information sur la livraison -->
+          <div class="shipping-info">
+            <hr>
+            <strong>Information sur livraison</strong>
+            <p>Nous livrons vos produits au maximum 72H à prix unique de 10£ <br>
+              
+              <ol>
+                <li>Adresse physique / Point repère</li>
+                <li>Numero de téléphone ou e-mail</li>
+              </ol>
+            </p>
+            <p>NB : Les livraisons dans nos locaux sont gratuites</p>
+          </div>
+
+          <div class="annonce-gamme">
+            <h2>Nos meilleurs collections</h2>
+          </div>
+
+          <div class="full-game">
+            <div class="card">
+              <div class="head">
+                <img src="images/product-9.jpg" >
+              </div>
+              <div class="body">
+                <h3>Montre </h3> 
+                <div class="content">
+                  <a href="detail-produit.html" class="btn add-cart">Ajout panier</a>
+                  <span class="btn">15.90£</span>
+                </div>
+                
+                
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="head">
+                <img src="images/product-8.jpg" >
+              </div>
+              <div class="body">
+                <h3>Monte chic</h3> 
+                <div class="content">
+                  <a href="detail-produit.html" class="btn add-cart">Ajout panier</a>
+                  <span class="btn">25.20£</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="head">
+                <img src="images/product-11.jpg" >
+              </div>
+              <div class="body">
+                <h3>Chaussure blanche</h3> 
+                <div class="content">
+                  <a href="detail-produit.html" class="btn add-cart">Ajout panier</a>
+                  <span class="btn">12£</span>
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <img src="images/product-12.jpg" >
+              </div>
+              <div class="body">
+                <h3>Jean noir</h3> 
+                <div class="content">
+                  <a href="detail-produit.html" class="btn add-cart">Ajout panier</a>
+                  <span class="btn">18.50£</span>
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <img src="images/category-3.jpg" ">
+              </div>
+              <div class="body">
+                <h3>Pulovert blache</h3> 
+                <div class="content">
+                  <a href="detail-produit.html" class="btn add-cart">Ajout panier</a>
+                  <span class="btn">35£</span>
+                </div> 
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <img src="images/category-2.jpg">
+              </div>
+              <div class="body">
+                <h3>Basket blache </h3> 
+                <div class="content">
+                  <a href="detail-produit.html" class="btn add-cart">Ajout panier</a>
+                  <span class="btn">9.40£</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ASIDE A DROITE  -->
+
+        <aside class="aside-droite">
+          <div class="card">
+            <h3>Lorem, ipsum 1.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#">Lorem, ipsum.</a>
+          </div>
+	<!-- call-to-action 4 -->
+
+
+          <div class="card">
+<video width="400" controls>
+  <source src="https://youtu.be/oenAK_gR7k0?t=9" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+
+<p>
+Lien youtube
+<a href="https://youtu.be/oenAK_gR7k0?t=9" target="_blank">Click 👈👈</a>.
+</p>
+          </div>
+	<div class="card">
+            <h3>Lorem, titre 4.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#">Lorem, ipsum.</a>
+          </div>
+          <div class="card">
+            <h3>Lorem, titre 5.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#">Lorem, ipsum.</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+<footer class="footer">
+  <div class="reseaux-sociaux">
+    <h4>Reseaux sociaux</h4>
+    <a href="#"><i class="fab fa-facebook    "></i></a>
+    <a href="#"><i class="fab fa-twitch    "></i></a>
+    <a href="#"><i class="fab fa-youtube    "></i></a>
+  </div>
+  <hr>
+  <p class="copyright">Crée par <span >BokaShop</span>. Open source</p>
+</footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

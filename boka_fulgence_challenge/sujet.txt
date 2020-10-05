@@ -1,0 +1,44 @@
+Challenge de Coding du Vendredi 02 0ctobre 2020.
+-
+Deux pages pour permettre à nos artisans africains/ivoiriens de vendre leurs produits en ligne.
+-
+Vous pouvez intégrer le design de menu le plus aboutit/innovant que vous souhaitez.
+Ceci un challenge html/css/javascript. Aucun framework autorisé.
+-
+
+
+PAGE 1 (page d'accueil)
+
+- Call To Action 1 : l'image d'un produit en promotion
+
+- Call To Action 2 : une palette de couleurs (autant que vous souhaitez). 
+lorsqu'on clique sur l'une des couleur, les couleurs du menu, des titres et des liens changent
+
+- Call To Action 3 : Un slider (à votre convenance). sur clic, on se retrouve dans la page 2 avec les détails du produit.
+
+- Shipping information : des informations pour indiquer à l'utilisateur, comment les achats sont livrés chez lui.
+
+- Call To Action 4 : Une vidéo (url youtube).
+- Product name (1,2,3,4,5,6) : Choisir vous-mêmes des noms de produits
+
+----------------------------------------------------------------------------
+
+PAGE 2 (page du produit)
+
+- Product Image : une image du produit
+
+- Pic 1,2,3 : d'autres photo du produit. sur clic, l'image se positionne au niveau de "Product Image" à gauche
+
+- Section "you may also be interested in" : Lorsqu'on clic sur une image, le produit en question se retrouve à gauche dans la section du produit principal avec ses propres informations.
+
+
+
+
+------------------------
+
+Remonter votre travail sur github (contactez-moi si vous n'êtes pas un habitué) et transmettre le lien inbox.
+Date limite : Lundi 05 Octobre 2020 à 8H00 GMT
+-
+1er prix : 1 livre + 20.000 fcfa de data internet + un espace d'hébergement
+2ème prix : 1 livre + 10.000 fcfa de data internet
+3ème prix : 1 livre + 5000 fcfa de data internet

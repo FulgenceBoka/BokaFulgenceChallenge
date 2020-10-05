@@ -1,0 +1,386 @@
+:root {
+  --font-size: 16px;
+  --block-width: 1366px;
+  --color: #ff523b;
+  --font-weight: 500;
+  --text-color: gray;
+  --color-white: #fff;
+  --light-blue: #fefef5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, sans-serif;
+  line-height: 1.3;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--text-color);
+}
+
+.block-principal {
+  width: calc(var(--block-width) - 100px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  -----------------------------  LINK   --------------------------------------- */
+a {
+  text-decoration: none;
+  font-weight: 900;
+  font-style: oblique;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--color);
+}
+a:visited {
+  color: var(--text-color);
+}
+
+/*  -----------------------------  GLOBAL   --------------------------------------- */
+.btn {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+/*  -----------------------------  HEADER   --------------------------------------- */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  background: radial-gradient(ellipse at top, #dae9ee, transparent), radial-gradient(ellipse at bottom, #fefefe, transparent);
+}
+.header-top .logo {
+  font-size: calc(var(--font-size) * 2);
+  color: var(--color);
+  transition: 1.2s;
+  transform-origin: center;
+}
+.header-top .logo a {
+  color: var(--color);
+}
+.header-top .div a {
+  color: var(--text-color);
+}
+.header-top small {
+  float: right;
+}
+.header-top small::after {
+  content: "";
+  clear: both;
+}
+.header-top input[type=search] {
+  justify-content: center;
+  width: 300px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+/*  -----------------------------  NAV   --------------------------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 5rem;
+}
+nav .panier img {
+  max-width: 25px;
+  height: auto;
+  color: var(--color);
+  cursor: pointer;
+}
+nav sup {
+  color: var(--text-color);
+}
+nav a {
+  color: var(--text-color);
+  padding: 0 2rem;
+  border-radius: 1rem;
+}
+nav a:hover {
+  background-color: var(--color);
+  text-decoration: none;
+  color: #fff;
+}
+nav a.panier:hover {
+  transform: scale(1.5);
+  transition: 1.2s;
+  background-color: transparent;
+}
+
+/*  -----------------------------  CONTAINER   --------------------------------------- */
+.container {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 2.5fr 7fr 2.5fr;
+  column-gap: var(--font-size);
+}
+.container a {
+  text-shadow: 0.1rem 0.08rem 0.1rem currentColor;
+}
+
+/*  -----------------------------   ASIDE GAUCHE   --------------------------------------- */
+.aside-gauche {
+  width: 100%;
+  position: relative;
+}
+.aside-gauche .card img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.aside-gauche .card #promo {
+  color: currentColor;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+.aside-gauche .card .active {
+  background-color: var(--color);
+}
+.aside-gauche .card .offre {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 1rem;
+  z-index: 1;
+  cursor: pointer;
+}
+.aside-gauche .card .offre:hover {
+  color: var(--color);
+}
+.aside-gauche .palet-color {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.aside-gauche .palet-color div {
+  cursor: pointer;
+}
+
+/*  -----------------------------  ASIDE DROITE   --------------------------------------- */
+.aside-droite {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.aside-droite .card {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.aside-droite .card a {
+  color: currentColor;
+}
+
+/*  -----------------------------  SECTION  --------------------------------------- */
+.section-container {
+  width: calc(100%-10px);
+  padding-left: auto;
+  padding-right: auto;
+  /*  -----------------------------  SLIDER  --------------------------------------- */
+}
+.section-container .slider {
+  position: relative;
+}
+.section-container .slider img {
+  width: 100%;
+  max-height: 800px;
+}
+.section-container .slider i {
+  position: absolute;
+  z-index: 10;
+  font-size: 5rem;
+  top: 50%;
+  opacity: 0.4;
+  transition: opacity 1.2s ease;
+  cursor: pointer;
+}
+.section-container .slider i.fa-chevron-left {
+  left: 5%;
+}
+.section-container .slider i.fa-chevron-right {
+  right: 5%;
+}
+.section-container .slider i:hover {
+  opacity: 1;
+}
+
+/*  -----------------------------  ANNONCE GAMME  --------------------------------------- */
+.annonce-gamme {
+  font-weight: 900;
+  font-style: italic;
+  font-size: calc(var(--font-size)+1.1rem);
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+/*  -----------------------------  INFORMATION DE VENTE  --------------------------------------- */
+.shipping-info {
+  margin: 2rem;
+  padding: 2rem;
+  justify-items: center;
+  text-align: center;
+}
+.shipping-info hr {
+  text-align: center;
+}
+
+/*  -----------------------------  MEILLEURS COLLECTIONS --------------------------------------- */
+.full-game {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.full-game .card {
+  background-color: var(--light-blue);
+  max-width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid gray;
+}
+.full-game .card .head {
+  max-width: 100%;
+}
+.full-game .card .head img {
+  max-width: 100%;
+  height: auto;
+}
+.full-game .card .body {
+  text-align: center;
+}
+.full-game .card .body .content {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-content: center;
+}
+.full-game .card .body .add-cart {
+  color: var(--text-color);
+  border: gray 1px solid;
+}
+.full-game .card .body .add-cart:hover {
+  background-color: var(--color);
+  color: var(--text-color);
+  text-decoration: none;
+  transition: background-color 1.2s ease;
+}
+.full-game .card .body span {
+  font-size: calc(var(--font-size) * 1.2);
+}
+
+/*  -------------------------------------------------------------------- */
+/*  -------------------------------------------------------------------- */
+.grand-container {
+  margin-top: 5rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.grand-container .section-container {
+  max-width: 100%;
+}
+.grand-container .detail-produit {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grand-container .detail-produit .head img {
+  max-width: 100%;
+}
+.grand-container .detail-produit .body {
+  padding: 1rem;
+}
+.grand-container .detail-produit .body input[type=button] {
+  padding: 0.7rem;
+}
+.grand-container .detail-produit .body input[type=number] {
+  padding: 0.7rem;
+}
+.grand-container .detail-produit .body #unitPrice {
+  text-decoration: line-through var(--color);
+}
+.grand-container .detail-produit .body #reductionPrice {
+  font-weight: 700;
+}
+.grand-container .compare-produit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grand-container .compare-produit .card {
+  margin: 0 1rem;
+  line-height: unset;
+  background-color: lightgoldenrodyellow;
+  padding: 1rem;
+}
+.grand-container .compare-produit .card .btn {
+  text-align: right;
+  border: 1px solid var(--color);
+  padding: 0.5rem;
+}
+.grand-container .compare-produit .card .h3 {
+  color: var(--color);
+}
+.grand-container .produits-interessant {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(2rem, 1fr));
+  grid-template-rows: auto;
+}
+.grand-container .produits-interessant .card {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #fff;
+}
+.grand-container .produits-interessant .card img {
+  max-width: 100%;
+}
+.grand-container .produits-interessant .card:last-child {
+  grid-column: span 2;
+}
+.grand-container .produits-interessant .card small {
+  color: var(--color);
+}
+.grand-container .body {
+  line-height: unset;
+}
+.grand-container .body h3 {
+  margin: 0;
+  padding: 0;
+}
+.grand-container .body .add-cart {
+  display: block;
+  background-color: var(--color);
+  color: var(--color-white);
+}
+
+.row-color {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.row-color .col-3 {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/*  -----------------------------  FOOTER --------------------------------------- */
+.footer {
+  padding-top: 2rem;
+  border-top: 1px solid transparent;
+  text-align: center;
+  background-color: var(--light-blue);
+}
+.footer .copyright {
+  text-align: center;
+}
+.footer .copyright span {
+  color: var(--color);
+  font-size: calc(var(--font-size) * 1.5);
+}
+
+/*# sourceMappingURL=style.css.map */
